@@ -1,0 +1,19 @@
+[
+  "total_entities",
+  "unique_entity_types",
+  "person_entities",
+  "org_entities",
+  "date_entities",
+  "location_entities",
+  "legal_specific_entities",
+  "finance_specific_entities",
+  "legal_keywords",
+  "finance_keywords",
+  "text_length",
+  "avg_word_length",
+  "has_legal_terms",
+  "has_financial_symbols",
+  "has_numbers",
+  "legal_keyword_ratio",
+  "finance_keyword_ratio"
+]

@@ -1,0 +1,95 @@
+[
+  {
+    "document_id": "001-90194",
+    "classification": {
+      "predicted_domain": "legal",
+      "confidence": 0.9643234024288396,
+      "domain_probabilities": {
+        "legal": 0.9643234024288396,
+        "finance": 0.033573406522672905,
+        "multi-domain": 0.00210319104848736
+      },
+      "secondary_domains": null,
+      "is_multi_domain": false,
+      "top_features": {
+        "text_length": 9923,
+        "legal_keywords": 7,
+        "finance_keywords": 6,
+        "avg_word_length": 5.062461726883037,
+        "has_numbers": 1.0
+      }
+    },
+    "entities": {
+      "count": 0,
+      "by_type": {},
+      "list": []
+    },
+    "metadata": {
+      "text_length": 9923,
+      "language": "en",
+      "processing_time": "2026-01-22T21:22:10.016677"
+    }
+  },
+  {
+    "document_id": "001-84741",
+    "classification": {
+      "predicted_domain": "legal",
+      "confidence": 0.9752394425290903,
+      "domain_probabilities": {
+        "legal": 0.9752394425290903,
+        "finance": 0.009060875194352107,
+        "multi-domain": 0.015699682276557533
+      },
+      "secondary_domains": null,
+      "is_multi_domain": false,
+      "top_features": {
+        "text_length": 3398,
+        "legal_keywords": 7,
+        "avg_word_length": 5.095495495495496,
+        "finance_keywords": 1,
+        "has_numbers": 1.0
+      }
+    },
+    "entities": {
+      "count": 0,
+      "by_type": {},
+      "list": []
+    },
+    "metadata": {
+      "text_length": 3398,
+      "language": "en",
+      "processing_time": "2026-01-22T21:22:10.103329"
+    }
+  },
+  {
+    "document_id": "001-91042",
+    "classification": {
+      "predicted_domain": "legal",
+      "confidence": 0.9898710214764587,
+      "domain_probabilities": {
+        "legal": 0.9898710214764587,
+        "finance": 0.008025787475053859,
+        "multi-domain": 0.00210319104848736
+      },
+      "secondary_domains": null,
+      "is_multi_domain": false,
+      "top_features": {
+        "text_length": 3350,
+        "legal_keywords": 7,
+        "avg_word_length": 4.982078853046595,
+        "has_numbers": 1.0,
+        "legal_keyword_ratio": 0.012544802867383513
+      }
+    },
+    "entities": {
+      "count": 0,
+      "by_type": {},
+      "list": []
+    },
+    "metadata": {
+      "text_length": 3350,
+      "language": "en",
+      "processing_time": "2026-01-22T21:22:10.182813"
+    }
+  }
+]
