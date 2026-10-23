@@ -1,16 +1,56 @@
-About :
+## Projet : Régression d'Image vers LAI
+Aperçu
+Ce projet vise à prédire le LAI (Leaf Area Index, indice de surface foliaire) à partir d'images de couvert végétal, en utilisant des techniques de régression supervisée par apprentissage automatique / profond.
+Le notebook regression-lai.ipynb constitue le point d'entrée principal et contient l'ensemble du pipeline : chargement des données, exploration, prétraitement, entraînement du modèle et évaluation.
 
-Leaf Area Index (LAI) Prediction Using Regression
-Project Overview
+### Structure du projet
+text
+Data/
+└── images/
+    └── <nom_image>.jpg    # ex. : A2_1_par_57_Lataule_0613.jpg
+Le notebook charge une image depuis ../Data/images/ et affiche ses dimensions (~2328 × 1534 pixels), ce qui suggère des images aériennes/parcellaires de haute résolution.
 
-This project predicts the Leaf Area Index (LAI) of plants using regression techniques. LAI is a key indicator in plant physiology and ecology, representing the total leaf area per unit ground area. Accurate LAI prediction is essential for agriculture, forestry, and environmental monitoring.
+### Objectif scientifique
+Le LAI est un indicateur clé en agronomie et en télédétection (suivi de la biomasse, de la croissance, du stress hydrique). L'objectif est de construire un modèle capable d'estimer cette variable directement à partir des pixels, sans mesure destructrice.
 
-This project leverages machine learning regression models to estimate LAI from input features, such as leaf characteristics, environmental parameters, or remote sensing data.
+### Pipeline général du notebook
+#### Chargement et inspection des données
+Lecture des images (PIL / OpenCV / matplotlib).
+Vérification des dimensions, canaux et du parcours des fichiers.
+#### Prétraitement
+Redimensionnement (les images brutes sont très grandes).
+Normalisation des valeurs de pixels.
+Éventuellement augmentation de données et extraction de patches.
 
-Features
+### Modélisation
+Approche de régression (CNN ou modèle pré-entraîné type ResNet / EfficientNet avec sortie scalaire).
+Fonction de perte adaptée (MSE, MAE, Huber).
+Découpage train / validation / test.
 
-Predicts Leaf Area Index using regression models.
+### Évaluation
+Métriques : R², RMSE, MAE.
+Visualisation prédit vs. observé.
+Analyse des résidus.
 
-Easy-to-use pipeline for training, testing, and evaluation.
+### Prérequis
+text
+python >= 3.9
+numpy
+pandas
+matplotlib
+scikit-learn
+torch (ou tensorflow/keras)
+opencv-python / pillow
+jupyter
 
-Generates visualizations of predicted vs. actual LAI values.
+###Installation :
+bash
+pip install -r requirements.txt
+# ou
+pip install numpy pandas matplotlib scikit-learn torch torchvision opencv-python pillow jupyter
+Utilisation
+bash
+jupyter notebook regression-lai.ipynb
+Puis exécuter les cellules dans l'ordre. Adapter le chemin des images (../Data/images/) selon votre arborescence locale.
+
+
